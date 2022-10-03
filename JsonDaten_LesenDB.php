@@ -15,7 +15,7 @@ if (!$connect) {
  * Tabelle von php erstellen
  */
 $query = '';
-$data = file_get_contents('project.json');
+$data = file_get_contents('Code_Challenge(DEV_Events_full).json');
 $array = json_decode($data, true);
 
 $sql_table = "CREATE TABLE rs_table(
@@ -38,7 +38,7 @@ if (mysqli_query($connect, $sql_table)) {
 
 foreach ($array as $row) {
     $query =
-        "INSERT INTO test_table VALUES
+        "INSERT INTO rs_table VALUES
         
         ('" . $row["participation_id"] . "',
         '" . $row["employee_name"] . "',
