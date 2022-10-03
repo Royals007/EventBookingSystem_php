@@ -21,7 +21,7 @@
 <body>
 <div class="container box">
     <h3 align="center">
-        Importieren von JSON-Daten in die Datenbank
+        Veranstaltungsbuchungssystem Informationen!
     </h3><br/>
 
     <!-- Erstellt form für filter (Search) -->
