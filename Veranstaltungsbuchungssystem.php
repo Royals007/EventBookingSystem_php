@@ -63,8 +63,8 @@
         /*  Erstelle eine einfache Seite mit Filtern für Mitarbeitername, Veranstaltungsname und Datum */
         while ($row = mysqli_fetch_assoc($result)) {
             if ($searchValue !== '') {
-                if (strpos($row['employee_name'], $searchValue) !== false &&
-                    strpos($row['event_name'], $searchValue) !== false &&
+                if (strpos($row['employee_name'], $searchValue) !== false ||
+                    strpos($row['event_name'], $searchValue) !== false ||
                     strpos($row['event_date'], $searchValue)) {
                     $filteredResults[] = $row;
                 }
